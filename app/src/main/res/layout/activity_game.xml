@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <!-- Tampilkan Nama Player -->
+    <TextView
+        android:id="@+id/tvPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Player: "
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Pilih Gunting, Batu, Kertas -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/mainLayout">
+
+        <ImageView
+            android:id="@+id/btnGunting"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="Gunting"
+            android:padding="10dp"
+            android:src="@drawable/gunting" />
+
+        <ImageView
+            android:id="@+id/btnBatu"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/batu"
+            android:contentDescription="Batu"
+            android:padding="10dp"/>
+
+        <ImageView
+            android:id="@+id/btnKertas"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/kertas"
+            android:contentDescription="Kertas"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <!-- Tombol Lawan -->
+    <Button
+        android:id="@+id/btnLawan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lawan"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"/>
+
+    <!-- Hasil Pertandingan -->
+    <ImageView
+        android:id="@+id/imgBotChoice"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/tvHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <!--    Button Kembali-->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kembali" />
+</LinearLayout>
