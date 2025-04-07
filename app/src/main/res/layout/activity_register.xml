@@ -22,7 +22,7 @@
         android:id="@+id/TextView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Permainan Gunting Batu Kertas"
+        android:text="Registrasi Akun "
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
+        android:text=":D"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TextView1"
@@ -48,7 +48,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sudah Siap Untuk Bermain? ^^"
+        android:text="Daftarkan Akun Kamu di Sini!"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
@@ -80,26 +80,15 @@
         app:layout_constraintTop_toBottomOf="@+id/inputUsername"
         android:layout_marginTop="16dp" />
 
-    <!-- Tombol Mulai -->
+    <!-- Tombol Daftar -->
     <Button
-        android:id="@+id/buttonMain"
+        android:id="@+id/buttonDaftar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Mulai Main!"
+        android:text="Daftar!"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/inputPassword"
         android:layout_marginTop="16dp" />
-
-    <!-- Tombol Register -->
-    <Button
-        android:id="@+id/buttonRegister"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Belum ada akun? Daftar disini"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonMain"
-        android:layout_marginTop="100dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

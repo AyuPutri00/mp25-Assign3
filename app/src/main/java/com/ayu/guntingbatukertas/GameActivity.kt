@@ -15,7 +15,7 @@ class GameActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_game)
 
-        val playerName = intent.getStringExtra("PLAYER_NAME")
+        val playerName = intent.getStringExtra("PLAYER_USERNAME")
 
         val tvPlayer = findViewById<TextView>(R.id.tvPlayer)
         val imgBotChoice = findViewById<ImageView>(R.id.imgBotChoice)
